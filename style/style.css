@@ -1,0 +1,520 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300; 400; 500; 600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    width: 100%;
+    /* height: 200vh; */
+    background-color: #18131a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* start top section */
+section .topsection .quality {
+    font-size: 30px;
+}
+
+section .topsection .fisrt img {
+    width: 70%;
+    position: relative;
+    bottom: 6%;
+    padding: 20px;
+}
+
+
+section .topsection .fisrt {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section .topsection .fisrt .the {
+    font-size: 35px;
+    width: 15%;
+    padding: 3px;
+}
+
+section .topsection .fisrt .burger {
+    font-size: 75px;
+    font-weight: 900;
+    position: relative;
+    top: 10px;
+}
+
+section .topsection .fisrt .arthouse .house {
+    color: #faa62e;
+    font-size: 100px;
+}
+
+section .topsection .fisrt .image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 25px 5px;
+    border-radius: 40%;
+    animation: shadow 3s infinite;
+    width: 56%;
+    height: 56vh;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 2px 2px 25px 5px;
+    }
+
+    25% {
+        box-shadow: 2px 2px 25px 5px #faa62e;
+    }
+
+    50% {
+        box-shadow: 2px 2px 25px 5px red;
+    }
+
+    75% {
+        box-shadow: 2px 2px 25px 5px green;
+    }
+
+    100% {
+        box-shadow: 2px 2px 25px 5px violet;
+    }
+}
+
+section .topsection .fisrt .arthouse {
+    position: absolute;
+    bottom: 22%;
+}
+
+
+section .topsection {
+    background-color: #161117;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+}
+
+section .topsection h3 {
+    color: #faa62e;
+}
+
+/* end top section */
+
+
+/* start bottom section */
+
+section .bottomsection {
+    background-color: #161117;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+section .bottomsection .burgers {
+    display: flex;
+    width: 100%;
+    background-color: #0d0a0e;
+    gap: 2rem;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section .bottomsection .burgers .imags {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    color: #faa62e;
+    text-align: center;
+    width: 30%;
+    box-shadow: 1px 1px 6px 1px;
+    padding-bottom: 10px;
+    height: fit-content;
+    cursor: pointer;
+}
+section .bottomsection .burgers .imags:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+section .bottomsection .burgers .imags img {
+    width: 100%;
+}
+
+section .bottomsection .burgers .imags span {
+    font-size: 13px;
+}
+
+section .bottomsection h1 {
+    font-size: 50px;
+    color: #faa62e;
+    border-bottom: 2px solid #faa62e;
+    width: 20%;
+    padding: 10px;
+    margin: auto;
+}
+
+section .bottomsection .content .art h2{
+    color: #faa62e;
+    font-size: 25px;
+    border: 2px dashed white;
+    border-radius: 10px 10px 0 0;
+    width: 23%;
+    margin: auto;
+    border-bottom: none;
+    padding: 7px;
+}
+
+section .bottomsection .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+section .bottomsection .content .art ul {
+    width: 80%;
+    margin: auto;
+    border: 2px dashed wheat;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+section .bottomsection .content .art li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    color: rgba(211, 211, 211, 0.562);
+}
+
+section .bottomsection .dessert li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    color: rgba(211, 211, 211, 0.562);
+
+}
+
+section .bottomsection .dessert ul {
+    width: 80%;
+    margin: auto;
+    border: 2px dashed wheat;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+section .bottomsection .dessert h3 {
+    color: #faa62e;
+    font-size: 25px;
+    border: 2px dashed white;
+    border-radius: 10px 10px 0 0;
+    width: 16%;
+    margin: auto;
+    border-bottom: none;
+    padding: 7px;
+}
+
+/* end bottom section */
+@media screen and (max-width: 450px) {
+    section .topsection {
+        width: 80%;
+        height: 63vh;
+        padding: 19px 2px;
+    }
+
+    section .topsection .fisrt .image {
+        width: 100%;
+        height: 35vh;
+    }
+
+    section .topsection .fisrt .burger {
+        font-size: 32px;
+        position: relative;
+        top: 7%;
+    }
+
+    section .topsection .fisrt img {
+        width: 210px;
+        position: relative;
+        bottom: 3%;
+        padding: 5px;
+    }
+
+    section .topsection .fisrt .arthouse {
+        position: absolute;
+        bottom: 54%;
+    }
+
+    section .topsection .fisrt .arthouse .house {
+        font-size: 39px;
+    }
+
+    section .topsection .quality {
+        font-size: 22px;
+    }
+
+    section .bottomsection h1 {
+        font-size: 39px;
+        padding: 5px;
+        width: initial;
+    }
+
+    section .bottomsection .content {
+        gap: 1.5rem;
+    }
+
+    section .bottomsection .content .art ul {
+        width: 100%;
+        padding: 4px;
+    }
+
+    section .bottomsection .content .art h2 {
+        font-size: 61%;
+        width: 50%;
+    }
+
+    section .bottomsection .dessert h3 {
+        font-size: 100%;
+        width: 50%;
+    }
+
+    section .bottomsection .dessert ul {
+        width: 100%;
+        margin: auto;
+        border: 2px dashed wheat;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    section .bottomsection .burgers {
+        padding: 20px 0;
+    }
+
+    section .bottomsection .burgers .imags {
+        width: 77%;
+    }
+}
+
+@media screen and (min-width:451px) and (max-width: 600px) {
+    section .topsection .fisrt .image {
+        width: 100%;
+        height: 58vh;
+    }
+
+    section .topsection .fisrt .burger {
+        font-size: 48px;
+        position: absolute;
+        top: 27%;
+    }
+
+    section .topsection .fisrt img {
+        width: 359px;
+        position: relative;
+        bottom: -72px;
+    }
+
+    section .topsection .fisrt .arthouse .house {
+        font-size: 63px;
+    }
+
+    section .topsection .fisrt .arthouse {
+        position: absolute;
+        bottom: 27%;
+    }
+
+    section .bottomsection h1 {
+        width: initial;
+        font-size: 40px;
+    }
+
+    section .bottomsection .content {
+        padding: 0px 20px;
+    }
+
+    section .bottomsection .content .art ul {
+        width: 100%;
+    }
+
+    section .bottomsection .content .art h2 {
+        width: 50%;
+        font-size: 14px;
+    }
+
+    section .bottomsection .dessert {
+        padding: 20px;
+    }
+
+    section .bottomsection .dessert ul {
+        width: 100%;
+    }
+
+    section .bottomsection .dessert h3 {
+        width: 50%;
+        font-size: 20px;
+    }
+
+    section .bottomsection .burgers .imags {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width:750px) {
+    section .topsection .fisrt .image {
+        width: 80%;
+        height: 62vh;
+    }
+
+    section .topsection .fisrt img {
+        width: 86%;
+        top: 20%;
+    }
+
+    section .topsection .fisrt .arthouse .house {
+        color: #faa62e;
+        font-size: 80px;
+    }
+
+    section .topsection .fisrt .burger {
+        position: absolute;
+        top: 24%;
+        font-size: 60px;
+    }
+
+    section .bottomsection h1 {
+        width: 38%;
+    }
+
+    section .bottomsection .content .art ul {
+        width: 100%;
+    }
+
+    section .bottomsection .content .art h2 {
+        width: 40%;
+        font-size: 20px;
+    }
+
+    section .bottomsection .dessert ul {
+        width: 100%;
+    }
+
+    section .bottomsection .dessert h3 {
+        width: 50%;
+    }
+
+    section .bottomsection .burgers .imags {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width:876px){
+    section .topsection .fisrt .image {
+        width: 90%;
+        height: 63vh;
+    }
+
+    section .topsection .fisrt img {
+        width: 74%;
+        position: relative;
+        top: 18%;
+    }
+
+    section .topsection .fisrt .burger {
+        position: absolute;
+        top: 20%;
+    }
+
+    section .bottomsection h1 {
+        width: 30%;
+    }
+
+    section .bottomsection .content .art ul {
+        width: 90%;
+    }
+
+    section .bottomsection .content .art h2 {
+        width: 30%;
+        font-size: 19px;
+    }
+
+    section .bottomsection .dessert ul {
+        width: 90%;
+    }
+    section .bottomsection .dessert h3{
+        width: 30%;
+    }
+    section .bottomsection .burgers .imags{
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 877px) and (max-width:992px ) {
+    section .topsection .fisrt .burger {
+        font-size: 53px;
+        position: absolute;
+        top: 151px;
+    }
+    section .topsection .fisrt img {
+        width: 90%;
+        position: relative;
+        bottom: -16%;
+    }
+    section .bottomsection .content {
+        padding: 20px;
+    }
+    section .bottomsection .content .art ul {
+        width: 100%;
+    }
+    .dessert{
+        padding: 20px;
+    }
+    section .bottomsection .dessert ul {
+        width: 100%;
+    }
+    section .bottomsection h1 {
+        width: 28%;
+    }
+    section .bottomsection .content .art h2,section .bottomsection .dessert h3{
+        width: 25%;
+        font-size: 17px;
+    }
+}
+@media screen and (min-width: 993px) and (max-width: 1326px){
+    section .topsection .fisrt .burger {
+        font-size: 56px;
+        position: relative;
+        top: 18px;
+    }
+    section .topsection .fisrt img {
+        width: 410px;
+        position: relative;
+        bottom: 3%;
+    }
+    section .bottomsection .content .art h2, section .bottomsection .dessert h3{
+        width: 28%;
+    }
+    section .bottomsection h1 {
+        width: 27%;
+    }
+    section .topsection .fisrt .image {
+        height: 63vh;
+    }
+}
